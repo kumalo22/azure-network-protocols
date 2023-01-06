@@ -84,7 +84,7 @@ Stop the ping activity
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DSOpac2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Observe SSH Traffic
@@ -92,8 +92,51 @@ Observe SSH Traffic
   
 - Back in Wireshark, filter for SSH traffic only
 - From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
-Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
+Type commands (username, pwd) into the linux SSH connection and observe SSH traffic spam in WireShark
 Exit the SSH connection by typing ‘exit’ and pressing [Enter]
 
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/DSOpac2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
+</p>  
+<p>
+Observe DNS Traffic
+  
+  
+- Back in Wireshark, filter for DNS traffic only
+- From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are
+Observe the DNS traffic being show in WireShark
+  
+  
+</p>
+<br />
+
+
+  <p>
+<img src="https://i.imgur.com/m8n0ghV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
+</p>  
+<p>
+Observe DHCP Traffic
+  
+  
+- Back in Wireshark, filter for DHCP traffic only
+- From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
+Observe the DHCP traffic appearing in WireShark
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
