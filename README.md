@@ -127,6 +127,20 @@ Observe the DHCP traffic appearing in WireShark
   
   
   
+</p>
+<br />
+
+
+  <p>
+<img src="https://i.imgur.com/NH4UxjS.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
+</p>  
+<p>
+Observe RDP Traffic
+  
+  
+- Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
+- Oserve the immediate non-stop spam of traffic? Why do you think it’s non-stop spamming vs only showing traffic when you do an activity?
+Answer: because the RDP (protocol) is constantly showing you a live stream from one computer to another, therefor traffic is always being transmitted
   
   
   
